@@ -5,4 +5,11 @@
     <string name="submitBtn">Submit</string>
     <string name="movieNumber">movieNumber</string>
     <string name="posterImage">posterImage</string>
+    <string name="backdropImage">backdropImage</string>
+
+    <string name="title">Title</string>
+    <string name="release">Release:</string>
+    <string name="releaseDate">ReleaseDate</string>
+    <string name="rating">Rating</string>
+    <string name="overview">Overview</string>
 </resources>
