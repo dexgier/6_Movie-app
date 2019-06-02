@@ -10,7 +10,8 @@ import retrofit2.http.Query;
 
 public interface MovieDatabaseApiService {
 
-    String apiKey = BuildConfig.apiKey;
+
+    String apiKey = "d3526c22ffe522a43c0f9b8331e67d90";
 
     @GET("movie?api_key=" + apiKey + "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&with_original_language=en")
     Call<MovieDatabase> getMovies();
