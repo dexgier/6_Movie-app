@@ -52,7 +52,7 @@ public class DetailActivity extends AppCompatActivity {
                 .transition(new DrawableTransitionOptions().crossFade())
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(posterImage);
-        title.setText(getIntent().getStringExtra("title"));
+       // title.setText(getIntent().getStringExtra("title"));
         releaseDate.setText(getIntent().getStringExtra("releaseDate"));
         rating.setText(Double.toString(getIntent().getDoubleExtra("rating", 0.0)));
         overview.setText(getIntent().getStringExtra("overview"));
