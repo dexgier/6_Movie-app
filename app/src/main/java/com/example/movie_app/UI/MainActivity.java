@@ -1,7 +1,9 @@
-package com.example.movie_app;
+package com.example.movie_app.UI;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.movie_app.R;
 
 public class MainActivity extends AppCompatActivity {
 

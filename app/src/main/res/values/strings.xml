@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">movie_app</string>
+    <string name="preText">The most popular movies of</string>
+    <string name="yearPreText">year</string>
+    <string name="submitBtn">Submit</string>
+    <string name="movieNumber">movieNumber</string>
+    <string name="posterImage">posterImage</string>
 </resources>
