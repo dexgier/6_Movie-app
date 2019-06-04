@@ -6,50 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".UI.MainActivity">
 
-    <TextView
-        android:id="@+id/preText"
-        android:layout_width="206dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/preText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/yearTextInput"
-        android:layout_width="75dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="@string/yearPreText"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/preText"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/submitBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#84E4CA"
-        android:text="@string/submitBtn"
-        app:layout_constraintStart_toEndOf="@+id/yearTextInput"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/preText"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/preText" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMovieList"
-        android:layout_width="331dp"
-        android:layout_height="458dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yearTextInput"
-        app:layout_constraintVertical_bias="0.526" />
+            <EditText
+                android:id="@+id/yearTextInput"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="@string/yearPreText"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#84E4CA"
+                android:text="@string/submitBtn" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMovieList"
+            android:layout_width="match_parent"
+            android:layout_height="458dp"
+            android:layout_marginTop="20dp"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="338dp" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
